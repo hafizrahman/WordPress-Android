@@ -19,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -375,7 +376,7 @@ public class AccountSettingsFragment extends PreferenceFragment implements OnPre
             if (username != null) {
                 WPSnackbar.make(getView(),
                         String.format(getString(R.string.settings_username_changer_toast_content), username),
-                        Snackbar.LENGTH_LONG).show();
+                        BaseTransientBottomBar.LENGTH_LONG).show();
                 mUsernamePreference.setSummary(username);
             }
         }
