@@ -62,8 +62,7 @@ public class WPSwipeSnackbar {
                 break;
         }
 
-        // CHECKSTYLE IGNORE
-        Snackbar snackbar = Snackbar.make(viewPager, text, Snackbar.LENGTH_LONG);
+        Snackbar snackbar = Snackbar.make(viewPager, text, Snackbar.LENGTH_LONG); // CHECKSTYLE IGNORE
         centerSnackbarText(snackbar);
         snackbar.show();
 
