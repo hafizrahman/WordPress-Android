@@ -223,11 +223,11 @@ public class AccountSettingsFragment extends PreferenceFragment implements OnPre
                     }
                 };
                 // link is inconsistent with errors about Snackbar.LENGTH_INDEFINITE
-                //CHECKSTYLE:OFF
+                // CHECKSTYLE:OFF
                 mEmailSnackbar = Snackbar
                         .make(getView(), "", Snackbar.LENGTH_INDEFINITE)
                         .setAction(getString(R.string.button_discard), clickListener);
-                //CHECKSTYLE:ON
+                // CHECKSTYLE:ON
                 TextView textView =
                         mEmailSnackbar.getView().findViewById(com.google.android.material.R.id.snackbar_text);
                 textView.setMaxLines(4);
